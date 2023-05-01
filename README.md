@@ -37,6 +37,7 @@ public class Main {
                 System.out.println("Tebrikler, doğru tahmin ! Tahmin ettiğini sayı : " + number);
                 isWin = true;
                 break;
+                
             } else {
                 System.out.println("Hatalı bir sayı girdiniz !" );
                 if (selected > number) {
