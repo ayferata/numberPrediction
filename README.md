@@ -22,13 +22,13 @@ public class Main {
             selected = input.nextInt();
 
             if (selected < 0 || selected > 99) {
-                System.out.println("Lütfen 0-100 arasında bir değer giriniz.");
+                System.out.println("Lütfen 0-100 arasında bir değer giriniz." );
                 if (isWrong) {
                     right++;
                     System.out.println("Çok fazla hatalı giriş yaptınız. Kalan hak : " + (5 - right));
                 } else {
                     isWrong = true;
-                    System.out.println("Bir daha hatalı girişinizde hakkınızdan düşülecektir.");
+                    System.out.println("Bir daha hatalı girişinizde hakkınızdan düşülecektir." );
                 }
                 continue;
             }
@@ -38,11 +38,11 @@ public class Main {
                 isWin = true;
                 break;
             } else {
-                System.out.println("Hatalı bir sayı girdiniz !");
+                System.out.println("Hatalı bir sayı girdiniz !" );
                 if (selected > number) {
-                    System.out.println(selected + " sayısı, gizli sayıdan büyüktür.");
+                    System.out.println(selected + " sayısı, gizli sayıdan büyüktür." );
                 } else {
-                    System.out.println(selected + " sayısı, gizli sayıdan küçüktür.");
+                    System.out.println(selected + " sayısı, gizli sayıdan küçüktür." );
                 }
 
                 wrong[right++] = selected;
@@ -51,7 +51,7 @@ public class Main {
         }
 
         if (!isWin) {
-            System.out.println("Kaybettiniz ! ");
+            System.out.println("Kaybettiniz ! " );
             if (!isWrong) {
                 System.out.println("Tahminleriniz : " + Arrays.toString(wrong));
             }
